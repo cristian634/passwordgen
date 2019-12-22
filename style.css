@@ -1,0 +1,61 @@
+h1{
+    margin: auto;
+    text-align: center;
+}
+h2{
+    padding-top: 5px;
+    margin: 5%;
+}
+hr { 
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 0.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: inset;
+    border-width: 1px;
+  } 
+#generatorBox{
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+    background-color: white;
+    
+    max-width: 520px;
+    min-width: 445px;
+    height: auto;
+}
+
+#passwordDisplay{
+    text-align: center;
+    margin: auto;
+    height: 100px;
+    width: 400px;
+    border: 1px dashed black;
+    border-radius: 25px;
+    overflow-x: auto;
+}
+
+#buttonGroup{
+    padding-bottom: 10px;    
+}
+
+#genPass{
+    border-radius: 25px;
+    color: black;
+    background-color: red;
+}
+#copyToClip{
+    border-radius: 25px;
+    color: black;
+   
+}
+
+body{
+    background-color: rgb(194, 194, 192);
+}
+/* 
+p{
+    display:inline-block;
+    max-width: 375px;
+} */
