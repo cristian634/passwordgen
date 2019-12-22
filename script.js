@@ -20,7 +20,7 @@ function generatePassword(){
     var specialChar  = confirm("Would you like to include special charactesr? (!, @, #, etc..");
     var upperCase = confirm("Would you like to conclude upcase letters?")
     var numbers = confirm("Would you like to include numbers?");
-    var passLength = prompt('How many characters should your passowrd be?').trim();
+    var passLength = prompt('How many characters should your passowrd be? (8-128 characers)').trim();
     //Arrays of possible characters to use in the passsword
     var charSet1 = 'abcdefghijklmnopqrstuvwxyz'.split('');
     var charSet2 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
@@ -43,7 +43,7 @@ function generatePassword(){
     }
 
     //determine user selection
-    if (isNaN(passLength) || passLength < 0 || passLength===''){
+    if (isNaN(passLength) || passLength < 8 || passLength > 128 || passLength===''){
         alert("Invalid input")
         generatePassword();
     }
