@@ -3,16 +3,17 @@ var copyButton = document.querySelector("#copyToClip");
 var textArea = document.querySelector("#changingText");
 var newPass = "";
 
+//copy to clip board requries textArea instead of a changing <p> 
+// function toClipBoard(){
+//     //get the text field and size 
+//     copySize = document.querySelector("#changingText").length;
+//     console.log(copySize);
+//     copyText = document.getElementById("changingText");
+//     copyText.select();
+//     copyText.setSelectionRange(0, 18);
 
-function toClipBoard(){
-    //get the text field and size 
-    copySize = document.querySelector("#changingText").length;
-    copyText = document.getElementById("changingText");
-    copyText.select();
-    copyText.setSelectionRange(0, copySize);
-
-    //copy command
-    document.execCommand("copy");
+//     //copy command
+//     document.execCommand("copy");
 }
 
 function generatePassword(){
@@ -88,7 +89,7 @@ function generatePassword(){
 generateButton.addEventListener('click', function(event){
     event.preventDefault();
     generatePassword();
-    document.getElementById("copyToClip").disabled = false; //enable copy button
+    // document.getElementById("copyToClip").disabled = false; //enable copy button
     textArea.textContent = newPass;
 })
 
