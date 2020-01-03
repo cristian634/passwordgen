@@ -14,7 +14,7 @@ var newPass = "";
 
 //     //copy command
 //     document.execCommand("copy");
-}
+// }
 
 function generatePassword(){
     //define booleans based on user input
