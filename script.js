@@ -87,6 +87,7 @@ function generatePassword(){
 
 //button click to generate a new passowrd
 generateButton.addEventListener('click', function(event){
+    newPass = "";
     event.preventDefault();
     generatePassword();
     // document.getElementById("copyToClip").disabled = false; //enable copy button
